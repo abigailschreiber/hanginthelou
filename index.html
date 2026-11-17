@@ -7,12 +7,13 @@
 <meta name="description" content="Where to hang in St. Louis this week. A hand-picked list of events, updated weekly.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 /* Layout idea: a printed weekly programme. A magazine cover where the Arch stands in front of the title, then listings set like a typed gallery guide: time, title, venue, price, hairline rules. One paper world, no cards, no pills. */
 :root{
-  --paper:#ece6e1; --ink:#1b1d1f; --navy:#0d415d; --soft:#6a6763; --rule:#1b1d1f; --hair:#b9b0a8; --white:#ffffff;
+  --paper:#ece6e1; --ink:#1b1d1f; --navy:#0d415d; --soft:#55524e; --rule:#1b1d1f; --hair:#b9b0a8; --white:#ffffff;
   --display:"Bodoni Moda","Didot","Bodoni MT","Times New Roman",serif;
+  --text:"Source Serif 4","Source Serif Pro",Georgia,"Times New Roman",serif;
   --type:"Courier Prime","Courier New",Courier,monospace;
   --archw:clamp(260px,36vw,500px); --band:calc(var(--archw) * .15);
   color-scheme:light;
@@ -20,14 +21,14 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--display);font-size:18px;line-height:1.5;font-optical-sizing:auto}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:18px;line-height:1.55;font-optical-sizing:auto}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.5;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1  0 0 0 0 .1  0 0 0 0 .1  0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E")}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--navy);outline-offset:4px}
 [id]{scroll-margin-top:24px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
-.meta{font-family:var(--type);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.meta{font-family:var(--type);font-size:14.5px;letter-spacing:.05em;text-transform:uppercase}
 /* masthead */
 .mast .wrap{padding-top:22px}
 .mast .row{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:20px;padding-bottom:14px}
@@ -39,50 +40,50 @@ a{color:inherit}
 .mast nav a:hover{text-decoration:underline;text-underline-offset:5px}
 /* cover */
 .cover{position:relative;overflow:hidden}
-.cover h1{margin:0;padding-top:clamp(18px,3vw,44px);text-align:center;font-weight:400;font-size:clamp(64px,16.5vw,250px);line-height:.86;letter-spacing:-.02em;color:var(--navy)}
+.cover h1{font-family:var(--display);margin:0;padding-top:clamp(18px,3vw,44px);text-align:center;font-weight:400;font-size:clamp(64px,16.5vw,250px);line-height:.86;letter-spacing:-.02em;color:var(--navy)}
 .cover h1 em{font-style:italic;display:block}
 .cover .stage{position:relative;z-index:1;display:grid;grid-template-columns:1fr var(--archw) 1fr;gap:clamp(20px,4vw,56px);align-items:end;margin-top:calc(var(--archw) * -.62)}
 .cover figure{margin:0;width:var(--archw)}
 .cover figure img{width:100%;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%)}
 .note{padding-bottom:calc(var(--band) + 30px);max-width:30ch}
 .note.right{justify-self:end}
-.note h2{font-family:var(--type);font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
-.note p{margin:0;font-size:19px;line-height:1.4}
+.note h2{font-family:var(--type);font-size:14.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.note p{margin:0;font-size:18px;line-height:1.5}
 .note ol{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.note li{font-size:19px;line-height:1.25}
-.note li span{display:block;font-family:var(--type);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:3px}
+.note li{font-size:18px;line-height:1.3}
+.note li span{display:block;font-family:var(--type);font-size:14px;letter-spacing:.03em;text-transform:uppercase;color:var(--soft);margin-top:3px}
 .ground{position:absolute;left:0;right:0;bottom:0;height:var(--band);background:var(--ink);z-index:0}
 .strap{position:absolute;z-index:2;left:0;right:0;bottom:0;height:var(--band);color:var(--white);pointer-events:none}
 .strap .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
 /* listings */
 .filters{border-bottom:1px solid var(--rule)}
 .filters .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:baseline;padding-top:16px;padding-bottom:16px}
-.filters button{font:inherit;font-family:var(--type);font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:none;border:0;padding:4px 0;color:var(--ink);cursor:pointer;border-bottom:1px solid transparent}
+.filters button{font:inherit;font-family:var(--type);font-size:14.5px;letter-spacing:.05em;text-transform:uppercase;background:none;border:0;padding:4px 0;color:var(--ink);cursor:pointer;border-bottom:1px solid transparent}
 .filters button:hover{border-bottom-color:var(--hair)}
 .filters button[aria-pressed="true"]{border-bottom:2px solid var(--ink);font-weight:700}
 .filters .count{margin-left:auto;color:var(--soft)}
 section.cat{display:grid;grid-template-columns:minmax(200px,.34fr) 1fr;gap:clamp(24px,5vw,72px);padding:clamp(44px,6vw,84px) 0;border-bottom:1px solid var(--rule)}
 section.cat:last-of-type{border-bottom:0}
 .cat header{position:sticky;top:24px;align-self:start}
-.cat h2{margin:0 0 10px;font-weight:400;font-style:italic;font-size:clamp(38px,4.6vw,62px);line-height:.98;letter-spacing:-.01em;color:var(--navy);text-wrap:balance}
+.cat h2{font-family:var(--display);margin:0 0 10px;font-weight:400;font-style:italic;font-size:clamp(38px,4.6vw,62px);line-height:.98;letter-spacing:-.01em;color:var(--navy);text-wrap:balance}
 .cat header p{margin:0;color:var(--soft)}
 .day + .day{margin-top:38px}
-.day h3{margin:0;padding-bottom:9px;border-bottom:1px solid var(--rule);font-family:var(--type);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.day h3{margin:0;padding-bottom:9px;border-bottom:1px solid var(--rule);font-family:var(--type);font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase}
 .day ul{list-style:none;margin:0;padding:0}
 .ev{display:grid;grid-template-columns:104px 1fr auto;gap:6px 22px;align-items:baseline;padding:17px 0 15px;border-bottom:1px dotted var(--hair)}
-.ev .time{font-family:var(--type);font-size:14.5px;line-height:1.35}
-.ev .t{font-size:23px;line-height:1.18;text-decoration:none;overflow-wrap:anywhere}
+.ev .time{font-family:var(--type);font-size:16px;line-height:1.35}
+.ev .t{font-size:21px;line-height:1.25;text-decoration:none;overflow-wrap:anywhere}
 a.t{background:linear-gradient(var(--navy),var(--navy)) 0 100%/0 1px no-repeat;transition:background-size .25s}
 a.t:hover,a.t:focus-visible{background-size:100% 1px;color:var(--navy)}
 @media (prefers-reduced-motion:reduce){a.t{transition:none}}
-.ev .venue{display:block;font-family:var(--type);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:5px;overflow-wrap:anywhere}
-.ev .price{font-family:var(--type);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;text-align:right;max-width:22ch}
+.ev .venue{display:block;font-family:var(--type);font-size:14px;letter-spacing:.03em;text-transform:uppercase;color:var(--soft);margin-top:5px;overflow-wrap:anywhere}
+.ev .price{font-family:var(--type);font-size:14px;letter-spacing:.03em;text-transform:uppercase;text-align:right;max-width:22ch}
 .ev .price.free{border:1px solid var(--navy);color:var(--navy);padding:2px 8px 1px;transform:rotate(-2deg)}
 .none{font-style:italic;padding:60px 0;text-align:center}
 /* submit: a clip-out coupon */
 .submit .wrap{padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(40px,6vw,80px)}
 .coupon{border:1.5px dashed var(--ink);padding:clamp(26px,5vw,56px);text-align:center;display:grid;gap:16px;justify-items:center}
-.coupon h2{margin:0;font-weight:400;font-style:italic;font-size:clamp(34px,5.4vw,68px);line-height:1;color:var(--navy);max-width:16ch;text-wrap:balance}
+.coupon h2{font-family:var(--display);margin:0;font-weight:400;font-style:italic;font-size:clamp(34px,5.4vw,68px);line-height:1;color:var(--navy);max-width:16ch;text-wrap:balance}
 .coupon p{margin:0;max-width:52ch}
 .coupon a{font-family:var(--type);font-size:clamp(17px,2.6vw,26px);text-underline-offset:6px;overflow-wrap:anywhere}
 .coupon .alt a{font-size:inherit}
